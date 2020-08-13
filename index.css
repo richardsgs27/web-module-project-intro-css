@@ -90,7 +90,8 @@ video {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 html {
   font-size: 62.5%;
@@ -100,7 +101,6 @@ body {
   font-family: "Roboto Mono", monospace;
   font-size: 1.6rem;
   line-height: 1.5;
-  letter-spacing: 3px;
 }
 
 nav {
@@ -140,15 +140,36 @@ nav a {
   background-color: #ffcd69;
 }
 
-.header-container {
-  width: 25%;
+.wrap {
   display: flex;
+  justify-content: space-around;
+  padding: 5% 0;
 }
 
-.title-box {
+.header-container {
+  width: 40%;
   display: flex;
-  width: 25%;
-  margin: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 60%;
+}
+
+.header-container .logo {
+  border-radius: 50%;
+}
+.important {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.important .title-box {
+  text-align: center;
+  width: 90%;
 }
 .logo img {
   border-radius: 50%;
@@ -164,9 +185,13 @@ h1 {
 
 .main-text {
   background-color: #ddb9a3;
-  margin: 4% 3%;
-  text-align: center;
-  padding: 3%;
+  margin: 0 auto;
+  padding: 2%;
+  width: 90%;
+  color: white;
+}
+.main-text p {
+  margin: 3% 0;
 }
 
 .container {
@@ -178,6 +203,10 @@ h1 {
 .container img {
   width: 35%;
   margin: 7% auto;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 .container .paragraph2 {
